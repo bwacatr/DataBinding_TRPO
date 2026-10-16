@@ -11,8 +11,12 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
@@ -22,20 +26,31 @@
         </Grid.RowDefinitions>
         <!-- Первый столбик-->
         <Label Content="Зарплата" FontSize="24"/>
-
-        <Label Content="Сотрудник" FontSize="18" Grid.Row="1"/>
-        <Label Content="Оклад" FontSize="18" Grid.Row="2"/>
-        <Label Content="Премия" FontSize="18" Grid.Row="3"/>
-        <Label Content="Удержание" FontSize="18" Grid.Row="4"/>
-        <Label Content="Сумма к выплате" FontSize="18" Grid.Row="5"/>
+        <Label Content="ID" FontSize="18" Grid.Row="1"/>
+        <Label Content="Сотрудник" FontSize="18" Grid.Row="2"/>
+        <Label Content="Оклад" FontSize="18" Grid.Row="3"/>
+        <Label Content="Премия" FontSize="18" Grid.Row="4"/>
+        <Label Content="Удержание" FontSize="18" Grid.Row="5"/>
+        <Label Content="Сумма к выплате" FontSize="18" Grid.Row="6"/>
+        <Button x:Name="saveBtn" Content="Сохранить" Grid.Row="7" Click="saveBtn_Click"/>
 
         <!--Второй столбик-->
+        <TextBox x:Name="IdTextBox" Text="{Binding Id, Mode=TwoWay,UpdateSourceTrigger=LostFocus}" Grid.Row="1" Grid.Column="1" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="NameBox" Text="{Binding Name, Mode=TwoWay,UpdateSourceTrigger=LostFocus}" Grid.Row="2" Grid.Column="1" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="SalaryBox" Text="{Binding Salary, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" Grid.Row="3" Grid.Column="1" TextChanged="TextBox_TextChanged" LostFocus="TextBox_LostFocus"/>
+        <TextBox x:Name="BonusBox" Text="{Binding Bonus, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" Grid.Row="4" Grid.Column="1" TextChanged="TextBox_TextChanged_1" LostFocus="TextBox_LostFocus"/>
+        <TextBox x:Name="DeductionBox" Text="{Binding Deduction, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" Grid.Row="5" Grid.Column="1" TextChanged="TextBox_TextChanged_2" LostFocus="TextBox_LostFocus"/>
+        <TextBox Text="{Binding Payment, Mode=OneWay, UpdateSourceTrigger=LostFocus}" Grid.Row="6" Grid.Column="1" x:Name="PaymentBox"/>
+        <Button x:Name="newEntryBtn" Content="Новая запись" Grid.Row="7" Grid.Column="1" Click="newEntryBtn_Click"/>
 
-        <TextBox Text="{Binding Name, Mode=TwoWay,UpdateSourceTrigger=LostFocus}" Grid.Row="1" Grid.Column="1" TextChanged="TextBox_TextChanged"/>
-        <TextBox Text="{Binding Salary, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" Grid.Row="2" Grid.Column="1" TextChanged="TextBox_TextChanged"/>
-        <TextBox Text="{Binding Bonus, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" Grid.Row="3" Grid.Column="1" TextChanged="TextBox_TextChanged_1"/>
-        <TextBox Text="{Binding Deduction, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" Grid.Row="4" Grid.Column="1" TextChanged="TextBox_TextChanged_2"/>
-        <TextBox Text="{Binding Payment, Mode=OneWay, UpdateSourceTrigger=LostFocus}" Grid.Row="5" Grid.Column="1" x:Name="PaymentBox"/>
-
+        <!--Третий столбик-->
+        <Label x:Name="IdLabel" Content="{Binding Id, Mode=OneWay,UpdateSourceTrigger=LostFocus}" FontSize="18" Grid.Row="1" Grid.Column="2"/>
+        <Label x:Name="NameLabel" Content="{Binding Name, Mode=OneWay,UpdateSourceTrigger=LostFocus}" FontSize="18" Grid.Row="2" Grid.Column="2"/>
+        <Label x:Name="SalaryLabel" Content="{Binding Salary, Mode=OneWay, UpdateSourceTrigger=LostFocus}" FontSize="18" Grid.Row="3" Grid.Column="2"/>
+        <Label x:Name="BonusLabel" Content="{Binding Bonus, Mode=OneWay, UpdateSourceTrigger=LostFocus}" FontSize="18" Grid.Row="4" Grid.Column="2"/>
+        <Label x:Name="DeductionLabel" Content="{Binding Deduction, Mode=OneWay, UpdateSourceTrigger=LostFocus}" FontSize="18" Grid.Row="5" Grid.Column="2"/>
+        <Label x:Name="PaymentLabel" Content="{Binding Payment, Mode=OneWay, UpdateSourceTrigger=LostFocus}" FontSize="18" Grid.Row="6" Grid.Column="2"/>
+        <TextBox x:Name="idBox" Grid.Row="7" Grid.Column="3"/>
+        <Button x:Name="searchBtn" Content="Найти" Grid.Row="8" Grid.Column="3" Click="searchBtn_Click"/>
     </Grid>
 </Window>

@@ -1,4 +1,7 @@
-﻿using System.Text;
+﻿using Microsoft.Win32;
+
+using System.IO;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,26 +19,117 @@ namespace DataBinding_TRPO
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Wage CurrentWage = new Wage();
+        Wage CurrentWage = new Wage();
+        WageList wageList = new WageList();
         public MainWindow()
         {
             InitializeComponent();
             DataContext = CurrentWage;
+
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            
+            openFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            openFileDialog.FilterIndex = 2;
+            openFileDialog.RestoreDirectory = true;
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                wageList.Load(openFileDialog.FileName);
+                CurrentWage = wageList.wages[0];
+
+                IdTextBox.Text = CurrentWage.Id.ToString();
+                IdLabel.Content = CurrentWage.Id;
+                SalaryBox.Text = CurrentWage.Salary.ToString();
+                SalaryLabel.Content = CurrentWage.Salary;
+                PaymentBox.Text = CurrentWage.Payment.ToString();
+                PaymentLabel.Content = CurrentWage.Payment;
+                BonusBox.Text = CurrentWage.Bonus.ToString();
+                BonusLabel.Content = CurrentWage.Bonus.ToString();
+                NameBox.Text = CurrentWage.Name;
+                NameLabel.Content = CurrentWage.Name;
+                DeductionBox.Text = CurrentWage.Deduction.ToString();
+                DeductionLabel.Content = CurrentWage?.Deduction.ToString();
+
+            }
+
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            
         }
 
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
-
+            
         }
 
         private void TextBox_TextChanged_2(object sender, TextChangedEventArgs e)
         {
+            
+        }
 
+        private void TextBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void saveBtn_Click(object sender, RoutedEventArgs e)
+        {
+            
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+
+            saveFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            saveFileDialog1.FilterIndex = 2;
+            saveFileDialog1.RestoreDirectory = true;
+
+            if (saveFileDialog1.ShowDialog() == true)
+            {
+                wageList.Save(saveFileDialog1.FileName);
+            }
+        }
+
+        private void newEntryBtn_Click(object sender, RoutedEventArgs e)
+        {
+            
+
+            wageList.wages.Add((Wage)CurrentWage.Clone());
+            CurrentWage.Clear();
+            
+            
+        }
+
+        private void searchBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (int.TryParse(idBox.Text, out int result))
+            {
+                Wage searchWage = wageList.Search(result);
+
+                if (searchWage != null) 
+                {
+                    CurrentWage = searchWage;
+
+                    IdTextBox.Text = CurrentWage.Id.ToString();
+                    IdLabel.Content = CurrentWage.Id;
+                    SalaryBox.Text = CurrentWage.Salary.ToString();
+                    SalaryLabel.Content = CurrentWage.Salary;
+                    PaymentBox.Text = CurrentWage.Payment.ToString();
+                    PaymentLabel.Content = CurrentWage.Payment;
+                    BonusBox.Text = CurrentWage.Bonus.ToString();
+                    BonusLabel.Content = CurrentWage.Bonus.ToString();
+                    NameBox.Text = CurrentWage.Name;
+                    NameLabel.Content = CurrentWage.Name;
+                    DeductionBox.Text = CurrentWage.Deduction.ToString();
+                    DeductionLabel.Content = CurrentWage?.Deduction.ToString();
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Введен посторонний символ", "Ошибка",MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            
         }
     }
 }

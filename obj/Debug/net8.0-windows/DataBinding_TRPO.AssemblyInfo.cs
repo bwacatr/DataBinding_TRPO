@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DataBinding_TRPO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89c38fe937c791917d9d9ed135200e938e858907")]
 [assembly: System.Reflection.AssemblyProductAttribute("DataBinding_TRPO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DataBinding_TRPO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -18,3 +18,4 @@ C:\Users\st310-08\Desktop\Romanov_PR31\DataBinding_TRPO\obj\Debug\net8.0-windows
 C:\Users\st310-08\Desktop\Romanov_PR31\DataBinding_TRPO\obj\Debug\net8.0-windows\DataBinding_TRPO.pdb
 C:\Users\st310-08\Desktop\Romanov_PR31\DataBinding_TRPO\obj\Debug\net8.0-windows\DataBinding_TRPO.genruntimeconfig.cache
 C:\Users\st310-08\Desktop\Romanov_PR31\DataBinding_TRPO\obj\Debug\net8.0-windows\ref\DataBinding_TRPO.dll
+C:\Users\st310-08\Desktop\Romanov_PR31\DataBinding_TRPO\obj\Debug\net8.0-windows\DataBinding_TRPO.sourcelink.json

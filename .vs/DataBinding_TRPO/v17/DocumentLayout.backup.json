@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\st310-08\\Desktop\\Romanov_PR31\\DataBinding_TRPO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6875D3B5-63DF-4422-A5F4-8DEB5293CB2C}|DataBinding_TRPO.csproj|c:\\users\\st310-08\\desktop\\romanov_pr31\\databinding_trpo\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{6875D3B5-63DF-4422-A5F4-8DEB5293CB2C}|DataBinding_TRPO.csproj|solutionrelative:mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{6875D3B5-63DF-4422-A5F4-8DEB5293CB2C}|DataBinding_TRPO.csproj|c:\\users\\st310-08\\desktop\\romanov_pr31\\databinding_trpo\\wagelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6875D3B5-63DF-4422-A5F4-8DEB5293CB2C}|DataBinding_TRPO.csproj|solutionrelative:wagelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6875D3B5-63DF-4422-A5F4-8DEB5293CB2C}|DataBinding_TRPO.csproj|c:\\users\\st310-08\\desktop\\romanov_pr31\\databinding_trpo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,20 +29,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WageList.cs",
+              "DocumentMoniker": "C:\\Users\\st310-08\\Desktop\\Romanov_PR31\\DataBinding_TRPO\\WageList.cs",
+              "RelativeDocumentMoniker": "WageList.cs",
+              "ToolTip": "C:\\Users\\st310-08\\Desktop\\Romanov_PR31\\DataBinding_TRPO\\WageList.cs",
+              "RelativeToolTip": "WageList.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA6wCYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T05:40:03.371Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "PropertyPathWorker.cs",
               "DocumentMoniker": "C:\\Users\\st310-08\\AppData\\Local\\Temp\\.vsdbgsrc\\1b77cb146b3dc6f60ca3b7de619b68fc3904b4f03155b255fa425d7d7bd36ae9\\PropertyPathWorker.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\1b77cb146b3dc6f60ca3b7de619b68fc3904b4f03155b255fa425d7d7bd36ae9\\PropertyPathWorker.cs",
-              "ToolTip": "C:\\Users\\st310-08\\AppData\\Local\\Temp\\.vsdbgsrc\\1b77cb146b3dc6f60ca3b7de619b68fc3904b4f03155b255fa425d7d7bd36ae9\\PropertyPathWorker.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\1b77cb146b3dc6f60ca3b7de619b68fc3904b4f03155b255fa425d7d7bd36ae9\\PropertyPathWorker.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
-              "ViewState": "AgIAAI8EAAAAAAAAAAAjwKoEAAAEAAAAAQAAAA==",
+              "ToolTip": "C:\\Users\\st310-08\\AppData\\Local\\Temp\\.vsdbgsrc\\1b77cb146b3dc6f60ca3b7de619b68fc3904b4f03155b255fa425d7d7bd36ae9\\PropertyPathWorker.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\1b77cb146b3dc6f60ca3b7de619b68fc3904b4f03155b255fa425d7d7bd36ae9\\PropertyPathWorker.cs",
+              "ViewState": "AgIAAEQEAAAAAAAAAAAjwKoEAAAEAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-09T12:02:34.167Z",
-              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -52,22 +65,9 @@
               "RelativeDocumentMoniker": "Wage.cs",
               "ToolTip": "C:\\Users\\st310-08\\Desktop\\Romanov_PR31\\DataBinding_TRPO\\Wage.cs",
               "RelativeToolTip": "Wage.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAD4vyIAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAWwEwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-09T11:14:16.598Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\st310-08\\Desktop\\Romanov_PR31\\DataBinding_TRPO\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\st310-08\\Desktop\\Romanov_PR31\\DataBinding_TRPO\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "ViewState": "AgIAABAAAAAAAAAAAAAewCQAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-09T11:31:59.709Z",
               "EditorCaption": ""
             },
             {
@@ -90,7 +90,7 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\st310-08\\Desktop\\Romanov_PR31\\DataBinding_TRPO\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA2wCUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAAHsAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-09T11:13:27.262Z",
               "EditorCaption": ""
