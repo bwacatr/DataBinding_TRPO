@@ -24,7 +24,7 @@ namespace DataBinding_TRPO
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = CurrentWage;
+            
 
             OpenFileDialog openFileDialog = new OpenFileDialog();
 
@@ -38,20 +38,10 @@ namespace DataBinding_TRPO
                 wageList.Load(openFileDialog.FileName);
                 CurrentWage = wageList.wages[0];
 
-                IdTextBox.Text = CurrentWage.Id.ToString();
-                IdLabel.Content = CurrentWage.Id;
-                SalaryBox.Text = CurrentWage.Salary.ToString();
-                SalaryLabel.Content = CurrentWage.Salary;
-                PaymentBox.Text = CurrentWage.Payment.ToString();
-                PaymentLabel.Content = CurrentWage.Payment;
-                BonusBox.Text = CurrentWage.Bonus.ToString();
-                BonusLabel.Content = CurrentWage.Bonus.ToString();
-                NameBox.Text = CurrentWage.Name;
-                NameLabel.Content = CurrentWage.Name;
-                DeductionBox.Text = CurrentWage.Deduction.ToString();
-                DeductionLabel.Content = CurrentWage?.Deduction.ToString();
+                
 
             }
+            DataContext = CurrentWage;
 
         }
 
@@ -108,20 +98,14 @@ namespace DataBinding_TRPO
 
                 if (searchWage != null) 
                 {
-                    CurrentWage = searchWage;
+                    CurrentWage.Bonus = searchWage.Bonus;
+                    CurrentWage.Salary = searchWage.Salary;
+                    CurrentWage.Name = searchWage.Name;
+                    CurrentWage.Id = searchWage.Id;
+                    CurrentWage.Payment = searchWage.Payment;
+                    CurrentWage.Deduction = searchWage.Deduction;
 
-                    IdTextBox.Text = CurrentWage.Id.ToString();
-                    IdLabel.Content = CurrentWage.Id;
-                    SalaryBox.Text = CurrentWage.Salary.ToString();
-                    SalaryLabel.Content = CurrentWage.Salary;
-                    PaymentBox.Text = CurrentWage.Payment.ToString();
-                    PaymentLabel.Content = CurrentWage.Payment;
-                    BonusBox.Text = CurrentWage.Bonus.ToString();
-                    BonusLabel.Content = CurrentWage.Bonus.ToString();
-                    NameBox.Text = CurrentWage.Name;
-                    NameLabel.Content = CurrentWage.Name;
-                    DeductionBox.Text = CurrentWage.Deduction.ToString();
-                    DeductionLabel.Content = CurrentWage?.Deduction.ToString();
+
                 }
 
             }
